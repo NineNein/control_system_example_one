@@ -2,3 +2,14 @@
 Example how I would build a control system for small to medium sized experiments
 
 UNDER CONSTRUCTION...
+
+# CMD Control
+Command Line Control
+
+Use your fav. Python Console e.g. IPython
+```from init_experiment import *```
+
+# When abastraction server makes sense?
+- When epics compatible types can be used
+- When Information should be global available
+
