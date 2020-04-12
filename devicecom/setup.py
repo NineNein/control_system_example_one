@@ -6,7 +6,7 @@ from setuptools import setup
 setup(
   name = 'devicecom',         # How you named your package folder (MyLib)
   packages = ['devicecom'],   # Chose the same as "name"
-  version = '0.1',      # Start with a small number and increase it with every change you make
+  version = '0.11',      # Start with a small number and increase it with every change you make
   license='GPL-3.0',        # Chose a license from here: https://help.github.com/articles/licensing-a-repository
   description = 'package which contains device server for the penning trap experiment',   # Give a short description about your library
   author = 'Alexander Rischka',                   # Type in your name

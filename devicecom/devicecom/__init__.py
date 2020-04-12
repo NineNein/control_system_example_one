@@ -1,1 +1,3 @@
-import test_company
+import devicecom.test_company
+import devicecom.test_company2
+import devicecom.myexperiment

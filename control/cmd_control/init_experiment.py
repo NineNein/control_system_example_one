@@ -1,3 +1,5 @@
 import experiment
 
-exp = experiment.experiment(experiment.config.config)
+
+
+exp = experiment.experiment(experiment.config)

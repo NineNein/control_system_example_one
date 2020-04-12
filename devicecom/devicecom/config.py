@@ -29,7 +29,7 @@ config = {
         "host" : "Kronos",  #Will start on Computer named Kronos, or specfied Ip
         "autostart" : True,
         "autorestart" : False,
-        "server_class" : devicecom.experiment.penning_trap.penning_trap,
+        "server_class" : devicecom.myexperiment.penning_trap.penning_trap,
         "server_args" : ( 
             "TEST:SCIENCE_TRAP",
             {

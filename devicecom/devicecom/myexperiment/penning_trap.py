@@ -7,16 +7,17 @@ class penning_trap(sefra.epics.device):
         print("Init Test device, ", name)
         super(penning_trap, self).__init__(name, server=server)
         self.config = config
+        
+        if self.server == True:
+            self.vs = devicecom.test_company2.voltage_source.voltage_source(self.config["voltage_source"])
 
-        self.vs = devicecom.test_company.voltage_source.voltage_source(self.config["voltage_source"])
+            self.UEC = self.vs.channel(self.config["UEC"])
+            self.UCE = self.vs.channel(self.config["UCE"])
+            self.RING = self.vs.channel(self.config["RING"])
+            self.LCE = self.vs.channel(self.config["LCE"])
+            self.LEC = self.vs.channel(self.config["LEC"])
 
-        self.UEC = vs.channel(self.config["UEC"])
-        self.UCE = vs.channel(self.config["UCE"])
-        self.RING = vs.channel(self.config["RING"])
-        self.LCE = vs.channel(self.config["LCE"])
-        self.LEC = vs.channel(self.config["LEC"])
-
-        self.tr = self.config["TR"]
+            self.tr = self.config["TR"]
 
 
     @sefra.epics.pv_set(type="float")

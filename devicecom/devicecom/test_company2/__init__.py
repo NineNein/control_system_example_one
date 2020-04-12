@@ -1,1 +1,1 @@
-import test_company2.voltage_source
+import devicecom.test_company2.voltage_source
