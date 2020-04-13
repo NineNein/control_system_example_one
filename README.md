@@ -10,6 +10,7 @@ Pros:
 
 Cons:
 - More Complex than one simple experiment class running on one computer
+- Most proably slower than a simple implementation, but anyhow time critical think should not be done on non realtime systems?
 
 
 I considere writing Epics server for all the devices exausting, but with the sefra class it gets managable.
