@@ -1,1 +1,2 @@
 import devicecom.test_company.rf_generator
+import devicecom.test_company.spectrum_analyser

@@ -42,5 +42,13 @@ config = {
                 "TR" : 0.5
             }
         )
+    },
+
+    "spectrum_analyser" : {
+        "host" : "Kronos",  #Will start on Computer named Kronos, or specfied Ip
+        "autostart" : True,
+        "autorestart" : False,
+        "server_class" : devicecom.test_company.spectrum_analyser.spectrum_analyser,
+        "server_args" : ("TEST:SPEC",)
     }
 }

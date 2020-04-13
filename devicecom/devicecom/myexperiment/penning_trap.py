@@ -23,7 +23,7 @@ class penning_trap(sefra.epics.device):
     @sefra.epics.pv_set(type="float")
     def set_depth(self, value):
         #In real life it makes sense to determine the order RING, CE or other wiese around
-        #by looking on the prev order.
+        #by looking on the prev depth vs new one.
 
         self.RING.set_voltage(value)
         self.UCE.set_voltage(value*self.tr)
