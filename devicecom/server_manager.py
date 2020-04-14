@@ -1,6 +1,6 @@
 from devicecom.config import config
 import socket
-import multiprocessing
+import multiprocess
 import time
 
 
@@ -24,7 +24,7 @@ class server_manager:
             if cfg["host"] not in [host_name, ip_addr]:
                 continue
 
-            p = multiprocessing.Process(target=self.run, args=(cfg,))
+            p = multiprocess.Process(target=self.run, args=(cfg,))
             p.start()
             print(p.pid)
 
@@ -43,7 +43,7 @@ class server_manager:
 
                 print("Restart ", name)
                 cfg = self.config[name]
-                p = multiprocessing.Process(target=self.run, args=(cfg,))
+                p = multiprocess.Process(target=self.run, args=(cfg,))
                 p.start()
                 print(p.pid)
                 self.pids[name] = p
