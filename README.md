@@ -27,6 +27,10 @@ In you favorite console change path to where the setup.py is located then use:
 python setup.py develop
 ```
 
+- Edit the config next to server_manager, change Host to the hostname or ip of your current Computer.
+- start server_manager.py
+- Start CMD Control
+
 # The Pattern
 
 There are two packages, the deviceom package and the experiment package.
